@@ -49,30 +49,34 @@
       padding-bottom: 5px;
       border-bottom: 2px solid #990000;
     }
+    /* Paper Item Styles */
     .paper {
-      border: 1px solid #ddd;
-      padding: 15px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      background: #fafafa;
+      margin-bottom: 25px;
     }
-    .paper a {
-      color: #990000;
-      text-decoration: none;
-      font-weight: bold;
+    .paper-title {
       font-size: 1.1em;
+      font-weight: bold;
+      color: #000; /* Black by default */
+      margin-bottom: 5px;
     }
-    .paper a:hover {
+    .paper-title a {
+      color: inherit; /* Inherit black color */
+      text-decoration: none;
+    }
+    .paper-title a:hover {
+      color: #990000;
       text-decoration: underline;
     }
-    .paper small {
-      display: block;
-      margin-top: 5px;
-      color: #555;
-      font-size: 0.95em;
+    .paper-authors {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 3px;
     }
-    /* Emphasize journal names within paper details */
-    .paper small em {
+    .paper-details {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .paper-details .journal {
       color: #990000;
       font-weight: bold;
     }
@@ -104,29 +108,65 @@
     <!-- Published Papers Section -->
     <section>
       <h2>Published Papers</h2>
+      
+      <!-- Paper 1 -->
       <div class="paper">
-        <a href="https://example.com/paper1" target="_blank">
-          “The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China”
-        </a>
-        <small>Accepted for Environment and Development Economics (2025) with Zhenyu Yao.</small>
+        <div class="paper-title">
+          <a href="https://example.com/paper1" target="_blank">
+            “The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China”
+          </a>
+        </div>
+        <div class="paper-authors">
+          with Zhenyu Yao
+        </div>
+        <div class="paper-details">
+          Accepted for <span class="journal">Environment and Development Economics</span> (2025).
+        </div>
       </div>
+      
+      <!-- Paper 2 -->
       <div class="paper">
-        <a href="https://doi.org/10.1016/j.forpol.2023.103141" target="_blank">
-          "The Human Well-Being Potential of Tree Plantations in Sub-Saharan Africa: A Reassessment Using Longitudinal Data"
-        </a>
-        <small>With Edouard Mensah, Ange Kakpo, and Ida Djenontin in <em>Forest Policy and Economics</em>, Volume 160 (2024): 103141.</small>
+        <div class="paper-title">
+          <a href="https://doi.org/10.1016/j.forpol.2023.103141" target="_blank">
+            "The Human Well-Being Potential of Tree Plantations in Sub-Saharan Africa: A Reassessment Using Longitudinal Data"
+          </a>
+        </div>
+        <div class="paper-authors">
+          with Edouard Mensah, Ange Kakpo, and Ida Djenontin
+        </div>
+        <div class="paper-details">
+          In <span class="journal">Forest Policy and Economics</span>, Volume 160 (2024): 103141.
+        </div>
       </div>
+      
+      <!-- Paper 3 -->
       <div class="paper">
-        <a href="https://doi.org/10.1073/pnas.2221346120" target="_blank">
-          "Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon"
-        </a>
-        <small>With Kathryn Baragwanath and Ella Bayi in <em>PNAS</em>, 120(22) (2023): e2221346120.</small>
+        <div class="paper-title">
+          <a href="https://doi.org/10.1073/pnas.2221346120" target="_blank">
+            "Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon"
+          </a>
+        </div>
+        <div class="paper-authors">
+          with Kathryn Baragwanath and Ella Bayi
+        </div>
+        <div class="paper-details">
+          In <span class="journal">PNAS</span>, 120(22) (2023): e2221346120.
+        </div>
       </div>
+      
+      <!-- Paper 4 -->
       <div class="paper">
-        <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003253884-10/incentives-rural-households-establish-tree-cover-agricultural-land-andhra-pradesh-india-stella-schons-gregory-amacher-kelly-cobourn-nilesh-shinde-haripriya-gundimeda" target="_blank">
-          "Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh"
-        </a>
-        <small>With Stella Schons, Greg Amacher, Kelly Cobourn, and Haripriya Gundimeda in <em>Environmental Economics in Developing Countries</em> (2022): 154.</small>
+        <div class="paper-title">
+          <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003253884-10/incentives-rural-households-establish-tree-cover-agricultural-land-andhra-pradesh-india-stella-schons-gregory-amacher-kelly-cobourn-nilesh-shinde-haripriya-gundimeda" target="_blank">
+            "Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh"
+          </a>
+        </div>
+        <div class="paper-authors">
+          with Stella Schons, Greg Amacher, Kelly Cobourn, and Haripriya Gundimeda
+        </div>
+        <div class="paper-details">
+          In <span class="journal">Environmental Economics in Developing Countries</span> (2022): 154.
+        </div>
       </div>
     </section>
     
@@ -134,42 +174,117 @@
     <section>
       <h2>Working Papers &amp; Work in Progress <br><small>(Draft Available Upon Request)</small></h2>
       
+      <!-- Land Category -->
       <h3><span class="marker">🌳</span>Land</h3>
+      
+      <!-- Paper 1 -->
       <div class="paper">
-        <a href="#">"Beyond the Canopy: Sources of Satellite Data and Deforestation Policy Evaluation in Brazil"</a>
-        <small><em>Journal of Environmental Economics and Management</em> (Invited, Special Issue) with Kathryn Baragwanath.</small>
-      </div>
-      <div class="paper">
-        <a href="#">“Self-Declared and Mandatory Environmental Registration of Landholdings Reduce Land Conflicts in the Brazilian Amazon”</a>
-        <small>With Stella Schons, Alexandre Gori Maia, and Gregory Amacher.</small>
-      </div>
-      <div class="paper">
-        <a href="#">“Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil”</a>
-        <small>Under Review with Stella Schons, Kathryn Baragwanath, Alexandre Gori Maia, and Gregory Amacher.</small>
+        <div class="paper-title">
+          <a href="#">"Beyond the Canopy: Sources of Satellite Data and Deforestation Policy Evaluation in Brazil"</a>
+        </div>
+        <div class="paper-authors">
+          with Kathryn Baragwanath
+        </div>
+        <div class="paper-details">
+          Invited for Special Issue in <span class="journal">Journal of Environmental Economics and Management</span>.
+        </div>
       </div>
       
+      <!-- Paper 2 -->
+      <div class="paper">
+        <div class="paper-title">
+          <a href="#">“Self-Declared and Mandatory Environmental Registration of Landholdings Reduce Land Conflicts in the Brazilian Amazon”</a>
+        </div>
+        <div class="paper-authors">
+          with Stella Schons, Alexandre Gori Maia, and Gregory Amacher
+        </div>
+        <div class="paper-details">
+          Working Paper.
+        </div>
+      </div>
+      
+      <!-- Paper 3 -->
+      <div class="paper">
+        <div class="paper-title">
+          <a href="#">“Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil”</a>
+        </div>
+        <div class="paper-authors">
+          with Stella Schons, Kathryn Baragwanath, Alexandre Gori Maia, and Gregory Amacher
+        </div>
+        <div class="paper-details">
+          Under Review.
+        </div>
+      </div>
+      
+      <!-- Water Category -->
       <h3><span class="marker">💧</span>Water</h3>
+      
+      <!-- Paper 1 -->
       <div class="paper">
-        <a href="#">“Unintended Consequences of a Large Irrigation Project for Groundwater Recharge”</a>
-        <small>With Prashikdivya Gajbhiye and Matt Woerman.</small>
-      </div>
-      <div class="paper">
-        <a href="#">“Adaptation to Climate Change: Evidence from Agricultural Productivity and Crop Water Footprints”</a>
-        <small>Under Review with Jayash Paudel.</small>
-      </div>
-      <div class="paper">
-        <a href="#">“Addressing the Threat of Groundwater Depletion: Does a Command-and-Control Approach Work?”</a>
-        <small>Under Review with Jayash Paudel and Sakshi Upadhyay.</small>
-      </div>
-      <div class="paper">
-        <a href="#">“The Social Costs of Water Pollution in the United States”</a>
-        <small>With Tihitina Andarge, Mohammad Mainul Hoque, Yongjie Ji, David Keiser, Catherine Kling, Daniel Phaneuf, and Yau-Huo Shr.</small>
+        <div class="paper-title">
+          <a href="#">“Unintended Consequences of a Large Irrigation Project for Groundwater Recharge”</a>
+        </div>
+        <div class="paper-authors">
+          with Prashikdivya Gajbhiye and Matt Woerman
+        </div>
+        <div class="paper-details">
+          Working Paper.
+        </div>
       </div>
       
-      <h3><span class="marker">🩺</span>Health</h3>
+      <!-- Paper 2 -->
       <div class="paper">
-        <a href="#">“Effect of Sunshine Duration on Mental Health”</a>
-        <small>With Jayash Paudel.</small>
+        <div class="paper-title">
+          <a href="#">“Adaptation to Climate Change: Evidence from Agricultural Productivity and Crop Water Footprints”</a>
+        </div>
+        <div class="paper-authors">
+          with Jayash Paudel
+        </div>
+        <div class="paper-details">
+          Under Review.
+        </div>
+      </div>
+      
+      <!-- Paper 3 -->
+      <div class="paper">
+        <div class="paper-title">
+          <a href="#">“Addressing the Threat of Groundwater Depletion: Does a Command-and-Control Approach Work?”</a>
+        </div>
+        <div class="paper-authors">
+          with Jayash Paudel and Sakshi Upadhyay
+        </div>
+        <div class="paper-details">
+          Under Review.
+        </div>
+      </div>
+      
+      <!-- Paper 4 -->
+      <div class="paper">
+        <div class="paper-title">
+          <a href="#">“The Social Costs of Water Pollution in the United States”</a>
+        </div>
+        <div class="paper-authors">
+          with Tihitina Andarge, Mohammad Mainul Hoque, Yongjie Ji, David Keiser, Catherine Kling, Daniel Phaneuf, and Yau-Huo Shr
+        </div>
+        <div class="paper-details">
+          Working Paper.
+        </div>
+      </div>
+      
+      <!-- Health Category -->
+      <h3><span class="marker">🩺</span>Health</h3>
+      
+      <!-- Paper 1 -->
+      <div class="paper">
+        <div class="paper-title">
+          <a href="#">“Effect of Sunshine Duration on Mental Health”</a>
+        </div>
+        <div class="paper-authors">
+          with Jayash Paudel
+        </div>
+        <div class="paper-details">
+          Working Paper.
+        </div>
       </div>
     </section>
   </div>
