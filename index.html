@@ -4,127 +4,114 @@
   <meta charset="UTF-8">
   <title>Nilesh SN Shinde - Home</title>
   <style>
-    body { 
+    /* Global Styles */
+    body {
       font-family: Georgia, "Times New Roman", serif;
       margin: 0;
       padding: 0;
       background: #fff;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: rgba(153, 0, 0, 0.1);
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .header-left img,
-    .header-right img {
-      height: 40px;
-    }
-    nav {
-      text-align: right;
-    }
-    nav a {
-      color: #333;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 40px;
-    }
-    .sidebar {
-      width: 30%;
-      background: #f7f7f7;
-      padding: 25px;
-      box-sizing: border-box;
-      border-right: 2px solid #ddd;
+      background: #f8f8f8;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
       text-align: center;
     }
-    .sidebar img.photo {
-      width: 80%;
-      max-width: 250px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    .sidebar h2 {
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
       color: #990000;
-      margin-bottom: 10px;
-      font-size: 1.5em;
     }
-    .sidebar p {
-      font-size: 1em;
-      line-height: 1.5;
-      margin: 10px 0;
+    nav {
+      margin-top: 10px;
     }
-    .sidebar a {
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #990000;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .profile img {
+      max-width: 200px;
+      border-radius: 5px;
+    }
+    .profile h2 {
+      color: #990000;
+      margin: 10px 0 5px;
+    }
+    .profile p {
+      margin: 5px 0;
+    }
+    .profile a {
       color: #990000;
       text-decoration: none;
+      font-weight: bold;
     }
-    .sidebar a:hover {
+    .profile a:hover {
       text-decoration: underline;
-    }
-    .content {
-      flex: 1;
-      padding: 20px 50px;
-      box-sizing: border-box;
     }
     .content h2 {
       color: #990000;
-      font-size: 1.8em;
-      margin-top: 0;
+      margin-bottom: 20px;
     }
-    .section {
-      margin-bottom: 30px;
+    .content p {
+      margin-bottom: 20px;
     }
-    .section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 15px;
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 20px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <a href="https://oneill.indiana.edu/index.html" target="_blank">
-        <img src="logo_IU.jpg" alt="O'Neill School Logo">
-      </a>
-    </div>
+    <h1>Nilesh SN Shinde</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
-      <a href="workshop.html">SCWP-Workshop</a>
-      <a href="resources.html">Other Resources</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="resources.html">Resources</a>
     </nav>
-    <div class="header-right">
-      <a href="https://www.indiana.edu/" target="_blank">
-        <img src="iu_logo.png" alt="Indiana University Bloomington Logo">
-      </a>
-    </div>
   </header>
   <div class="container">
-    <div class="sidebar">
-      <img class="photo" src="nilesh_shinde.JPG" alt="Nilesh SN Shinde">
-      <h2>Nilesh SN Shinde</h2>
-      <p>Assistant Professor, Indiana University Bloomington</p>
+    <div class="profile">
+      <img src="nilesh_shinde.JPG" alt="Nilesh SN Shinde">
+      <h2>Assistant Professor</h2>
+      <p>Indiana University Bloomington</p>
       <p><a href="mailto:nnshinde@iu.edu">nnshinde@iu.edu</a></p>
-      <p><a href="https://oneill.indiana.edu/index.html" target="_blank">O’Neill School of Public &amp; Environmental Affairs</a></p>
+      <p><a href="https://oneill.indiana.edu/index.html" target="_blank">
+        O’Neill School of Public &amp; Environmental Affairs</a></p>
     </div>
     <div class="content">
-      <div class="section">
-        <h2>Welcome</h2>
-        <p>I am currently a Postdoctoral Research Associate in the Department of Resource Economics at UMass Amherst. Starting in Fall 2025, I will join Indiana University Bloomington as an Assistant Professor. My research focuses on environmental and natural resource economics—with an emphasis on land use, water resources, and public policy.</p>
-      </div>
-      <div class="section">
-        <p>I hold a Ph.D. in Natural Resource Economics and Environmental Informatics from Virginia Tech, along with degrees in Development Economics (Brazil) and Mechanical Engineering (India). My work examines the interplay between human and environmental systems and develops Integrated Assessment Models (IAMs) to tackle water quality challenges, particularly nutrient pollution.</p>
-      </div>
+      <h2>Welcome</h2>
+      <p>
+        I am currently a Postdoctoral Research Associate at UMass Amherst and will join Indiana University Bloomington as an Assistant Professor in Fall 2025. My research focuses on environmental and natural resource economics—with special emphasis on land use, water resources, and public policy.
+      </p>
+      <p>
+        I earned a Ph.D. in Natural Resource Economics and Environmental Informatics from Virginia Tech, and I also hold degrees in Development Economics (Brazil) and Mechanical Engineering (India). My work investigates the interactions between human and environmental systems and develops Integrated Assessment Models (IAMs) to address water quality challenges, particularly nutrient pollution.
+      </p>
     </div>
   </div>
+  <footer>
+    &copy; 2025 Nilesh SN Shinde. All rights reserved.
+  </footer>
 </body>
 </html>
