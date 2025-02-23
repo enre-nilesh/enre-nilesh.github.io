@@ -23,17 +23,6 @@ title: "Nilesh SN Shinde - Home"
       display: flex; 
       align-items: center;
     }
-    .header-left { 
-      display: flex; 
-      align-items: center; 
-      margin-right: 20px; 
-    }
-    .header-left img { 
-      border-radius: 50%; 
-      width: 60px; 
-      height: 60px; 
-      margin-right: 10px;
-    }
     .header-logos img { 
       height: 40px; 
       margin-right: 10px;
@@ -51,11 +40,19 @@ title: "Nilesh SN Shinde - Home"
     .sidebar { 
       background: #f4f4f4; 
       padding: 20px; 
-      width: 300px; 
+      width: 30%; 
+      box-sizing: border-box;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar img.photo {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
     }
     .content { 
       flex: 1; 
       padding: 20px; 
+      box-sizing: border-box;
     }
     h1, h2 { margin-top: 0; }
     .section { margin-bottom: 20px; }
@@ -63,10 +60,6 @@ title: "Nilesh SN Shinde - Home"
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <!-- Placeholder for your photo -->
-      <img src="https://drive.google.com/file/d/1gsWyL6-DS5cJaVrNV7HYQ5PgI3JSlZAa/view?usp=sharing" alt="Nilesh SN Shinde Photo">
-    </div>
     <div class="header-logos">
       <!-- O'Neill School Logo -->
       <a href="https://public.and.iu.edu/" target="_blank">
@@ -82,6 +75,8 @@ title: "Nilesh SN Shinde - Home"
   </header>
   <div class="container">
     <div class="sidebar">
+      <!-- Personal Photo -->
+      <img class="photo" src="https://via.placeholder.com/300x300?text=Your+Photo" alt="Nilesh SN Shinde Photo">
       <h2>Personal</h2>
       <p><strong>Name:</strong> Nilesh SN Shinde</p>
       <p><strong>Title:</strong> Assistant Professor (Starting tenure-track, Fall 2025)</p>
