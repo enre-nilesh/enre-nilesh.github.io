@@ -1,186 +1,165 @@
----
-layout: none
-title: "Nilesh SN Shinde - Research"
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Nilesh SN Shinde - Research</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
+    body { 
+      font-family: Georgia, "Times New Roman", serif; 
+      margin: 0; 
+      padding: 0; 
+      background: #fff; 
+      color: #333; 
     }
-    header {
-      background: #007acc;
-      color: #fff;
-      padding: 10px 20px;
+    header { 
+      background: rgba(153, 0, 0, 0.1); /* Reduced IU Crimson to 10% opacity */
+      color: #333; 
+      padding: 15px 30px; 
+      display: flex; 
+      align-items: center;
+      justify-content: space-between;
     }
-    nav a {
-      color: #fff;
-      margin-right: 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .header-left img { 
+      height: 40px; 
     }
-    .container {
-      display: flex;
-      padding: 20px;
+    .header-right img { 
+      height: 40px; 
     }
-    .sidebar {
-      background: #f4f4f4;
-      padding: 20px;
-      width: 300px;
-      margin-right: 20px;
-      border-radius: 5px;
+    nav { text-align: right; }
+    nav a { 
+      color: #333; 
+      margin-left: 20px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      font-size: 1.1em;
     }
-    .content {
-      flex: 1;
+    .container { 
+      display: flex; 
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
     }
-    h1, h2, h3 {
-      margin-top: 0;
+    .sidebar { 
+      background: #f7f7f7; 
+      padding: 25px; 
+      width: 30%; 
+      box-sizing: border-box;
+      border-right: 2px solid #ddd;
     }
-    .section {
-      margin-bottom: 40px;
+    .sidebar h2 {
+      color: #990000;
+      margin-bottom: 10px;
+      font-size: 1.5em;
     }
-    ul {
+    .sidebar ul {
       list-style: none;
       padding-left: 0;
     }
-    li.paper-item {
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      color: #990000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .content { 
+      flex: 1; 
+      padding: 20px 50px;
+      box-sizing: border-box;
+    }
+    .content h1, .content h2 {
+      color: #990000;
+      margin-top: 0;
+      font-size: 1.8em;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .paper-item {
       border: 1px solid #ddd;
       border-radius: 5px;
       padding: 15px;
       margin-bottom: 20px;
       background: #fafafa;
     }
-    li.paper-item a {
-      color: #007acc;
+    .paper-item a {
+      color: #990000;
       text-decoration: none;
       font-size: 1.1em;
       font-weight: bold;
     }
-    li.paper-item a:hover {
+    .paper-item a:hover {
       text-decoration: underline;
-    }
-    small {
-      display: block;
-      color: #555;
-      margin-top: 6px;
-      font-size: 0.9em;
     }
     .keywords {
       font-weight: bold;
-      margin-top: 8px;
       font-size: 0.95em;
       color: #333;
-    }
-    .status {
-      font-style: italic;
-      color: #a00;
-      margin-top: 4px;
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="header-left">
+      <a href="https://oneill.indiana.edu/index.html" target="_blank">
+        <img src="logo_IU.jpg" alt="O'Neill School Logo">
+      </a>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="workshop.html">SCWP-Workshop</a>
       <a href="resources.html">Other Resources</a>
     </nav>
+    <div class="header-right">
+      <a href="https://www.indiana.edu/" target="_blank">
+        <img src="iu_logo.png" alt="Indiana University Bloomington Logo">
+      </a>
+    </div>
   </header>
   <div class="container">
     <div class="sidebar">
       <h2>Research Navigation</h2>
       <ul>
         <li><a href="#published-papers">Published Papers</a></li>
-        <li><a href="#working-papers">Working Papers &amp; Work in Progress</a></li>
+        <li><a href="#working-papers">Working Papers & Work in Progress</a></li>
       </ul>
     </div>
     <div class="content">
-      <!-- Published Papers Section -->
       <div class="section" id="published-papers">
         <h1>Published Papers</h1>
         <ul>
           <li class="paper-item">
-            <a href="https://doi.org/placeholder1" target="_blank">
-              “The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China”
-            </a>
-            <small>Accepted for Environment and Development Economics (2025) with Zhenyu Yao.</small>
-            <div class="keywords">Keywords: Land Use, Water</div>
+            <a href="#">Title of Published Paper 1</a>
+            <div class="keywords">Keywords: Example</div>
           </li>
           <li class="paper-item">
-            <a href="https://doi.org/10.1016/j.forpol.2023.103141" target="_blank">
-              "The Human Well-Being Potential of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data"
-            </a>
-            <small>with Edouard Mensah, Ange Kakpo, and Ida Djenontin in <em>Forest Policy and Economics</em>, Volume 160 (2024): 103141.</small>
-            <div class="keywords">Keywords: Health, Land Use</div>
-          </li>
-          <li class="paper-item">
-            <a href="https://doi.org/10.1073/pnas.2221346120" target="_blank">
-              "Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon"
-            </a>
-            <small>with Kathryn Baragwanath and Ella Bayi in <em>Proceedings of the National Academy of Sciences</em>, 120, No. 22 (2023): e2221346120.<br>
-              Awarded the 5th edition of the MapBiomas Award; featured in Mongabay and the World Economic Forum.</small>
-            <div class="keywords">Keywords: Land Use</div>
-          </li>
-          <li class="paper-item">
-            <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003253884-10/incentives-rural-households-establish-tree-cover-agricultural-land-andhra-pradesh-india-stella-schons-gregory-amacher-kelly-cobourn-nilesh-shinde-haripriya-gundimeda" target="_blank">
-              "Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh"
-            </a>
-            <small>with Stella Schons, Greg Amacher, Kelly Cobourn, and Haripriya Gundimeda in <em>Environmental Economics in Developing Countries: Issues and Challenges</em> (2022): 154.</small>
-            <div class="keywords">Keywords: Land Use</div>
+            <a href="#">Title of Published Paper 2</a>
+            <div class="keywords">Keywords: Example</div>
           </li>
         </ul>
       </div>
-      
-      <!-- Working Papers & Work in Progress Section -->
       <div class="section" id="working-papers">
-        <h2>Working Papers &amp; Work in Progress <small>[Draft available upon request]</small></h2>
+        <h2>Working Papers & Work in Progress</h2>
         <ul>
           <li class="paper-item">
-            "Beyond the Canopy: Sources of Satellite Data and Deforestation Policy Evaluation in Brazil"
-            <small><em>Journal of Environmental Economics and Management</em> (Invited for Special Issue) with Kathryn Baragwanath.</small>
-            <div class="keywords">Keywords: Land Use</div>
+            "Title of Working Paper 1"
+            <div class="keywords">Keywords: Example</div>
           </li>
           <li class="paper-item">
-            "Self-Declared and Mandatory Environmental Registration of Landholdings Reduce Land Conflicts in the Brazilian Amazon"
-            <small>with Stella Schons, Alexandre Gori Maia, and Gregory Amacher.</small>
-            <div class="keywords">Keywords: Land Use</div>
-          </li>
-          <li class="paper-item">
-            "Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil"
-            <small>Under Review with Stella Schons, Kathryn Baragwanath, Alexandre Gori Maia, and Gregory Amacher.</small>
-            <div class="status">Submitted</div>
-            <div class="keywords">Keywords: Land Use</div>
-          </li>
-          <li class="paper-item">
-            "Unintended Consequences of a Large Irrigation Project for Groundwater Recharge"
-            <small>with Prashikdivya Gajbhiye and Matt Woerman.</small>
-            <div class="status">Work in progress --</div>
-            <div class="keywords">Keywords: --</div>
-          </li>
-          <li class="paper-item">
-            "Adaptation to Climate Change: Evidence from Agricultural Productivity and Crop Water Footprints"
-            <small>Under Review with Jayash Paudel.</small>
-            <div class="status">Submitted</div>
-            <div class="keywords">Keywords: --</div>
-          </li>
-          <li class="paper-item">
-            "Addressing the Threat of Groundwater Depletion: Does a Command-and-Control Approach Work?"
-            <small>Under Review with Jayash Paudel and Sakshi Upadhyay.</small>
-            <div class="status">Submitted</div>
-            <div class="keywords">Keywords: --</div>
+            "Title of Working Paper 2"
+            <div class="keywords">Keywords: Example</div>
           </li>
         </ul>
       </div>
-      
     </div>
   </div>
 </body>
