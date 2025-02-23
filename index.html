@@ -1,17 +1,11 @@
----
-layout: none
-title: "Nilesh SN Shinde - Home"
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Nilesh SN Shinde - Home</title>
   <style>
-    /* Indiana University Crimson: #990000 */
     body { 
-      font-family: Arial, sans-serif; 
+      font-family: Georgia, "Times New Roman", serif; 
       margin: 0; 
       padding: 0; 
       background: #fff; 
@@ -23,12 +17,15 @@ title: "Nilesh SN Shinde - Home"
       padding: 15px 30px; 
       display: flex; 
       align-items: center;
+      justify-content: space-between;
     }
-    .header-logos img { 
+    .header-left img { 
       height: 40px; 
-      margin-right: 15px;
     }
-    nav { flex: 1; text-align: right; }
+    .header-right img { 
+      height: 40px; 
+    }
+    nav { text-align: right; }
     nav a { 
       color: #fff; 
       margin-left: 20px; 
@@ -38,31 +35,31 @@ title: "Nilesh SN Shinde - Home"
     }
     .container { 
       display: flex; 
-      padding: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
     }
     .sidebar { 
       background: #f7f7f7; 
-      padding: 20px; 
+      padding: 25px; 
       width: 30%; 
       box-sizing: border-box;
       border-right: 2px solid #ddd;
+      text-align: center;
     }
     .sidebar img.photo {
-      width: 90%; /* slightly smaller */
+      width: 80%;
       max-width: 250px;
       border-radius: 5px;
       margin-bottom: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
     .sidebar h2 {
-      text-align: center;
       color: #990000;
       margin-bottom: 10px;
+      font-size: 1.5em;
     }
     .sidebar p {
-      font-size: 0.95em;
+      font-size: 1em;
       line-height: 1.5em;
       margin: 10px 0;
     }
@@ -75,18 +72,19 @@ title: "Nilesh SN Shinde - Home"
     }
     .content { 
       flex: 1; 
-      padding: 20px 40px;
+      padding: 20px 50px;
       box-sizing: border-box;
     }
     .content h1, .content h2 {
       color: #990000;
       margin-top: 0;
+      font-size: 1.8em;
     }
     .section {
       margin-bottom: 30px;
     }
     .section p {
-      font-size: 1em;
+      font-size: 1.1em;
       line-height: 1.6em;
       margin-bottom: 15px;
     }
@@ -94,9 +92,8 @@ title: "Nilesh SN Shinde - Home"
 </head>
 <body>
   <header>
-    <div class="header-logos">
-      <!-- O'Neill School Logo -->
-      <a href="https://public.and.iu.edu/" target="_blank">
+    <div class="header-left">
+      <a href="https://oneill.indiana.edu/index.html" target="_blank">
         <img src="logo_IU.jpg" alt="O'Neill School Logo">
       </a>
     </div>
@@ -106,31 +103,28 @@ title: "Nilesh SN Shinde - Home"
       <a href="workshop.html">SCWP-Workshop</a>
       <a href="resources.html">Other Resources</a>
     </nav>
+    <div class="header-right">
+      <a href="https://www.indiana.edu/" target="_blank">
+        <img src="iu_logo.png" alt="Indiana University Bloomington Logo">
+      </a>
+    </div>
   </header>
   <div class="container">
     <div class="sidebar">
-      <!-- Personal Photo (slightly smaller) -->
       <img class="photo" src="nilesh_shinde.JPG" alt="Nilesh SN Shinde Photo">
       <h2>Nilesh SN Shinde</h2>
       <p><strong>Name:</strong> Nilesh SN Shinde</p>
       <p><strong>Title:</strong> Assistant Professor (Starting in Fall 2025)</p>
       <p><strong>Email:</strong> <a href="mailto:nnshinde@iu.edu">nnshinde@iu.edu</a></p>
-      <p>
-        <strong>Affiliation:</strong> 
-        <a href="https://www.indiana.edu/" target="_blank">Indiana University Bloomington</a>
-      </p>
-      <p>
-        <strong>Department:</strong> 
-        <a href="https://public.and.iu.edu/" target="_blank">O’Neill School of Public and Environmental Affairs</a>
-      </p>
+      <p><strong>Affiliation:</strong> <a href="https://www.indiana.edu/" target="_blank">Indiana University Bloomington</a></p>
+      <p><strong>Department:</strong> <a href="https://oneill.indiana.edu/index.html" target="_blank">The Paul H. O’Neill School of Public and Environmental Affairs</a></p>
     </div>
     <div class="content">
       <div class="section">
-        <h1>Welcome to My Website</h1>
-        <p>Hello, I'm Nilesh Shinde. I am currently a Postdoctoral Research Associate in the Department of Resource Economics at UMass Amherst. Starting Fall 2025, I will join <a href="https://www.indiana.edu/" target="_blank">Indiana University Bloomington</a> as an Assistant Professor. My work focuses on environmental and natural resource economics with special attention to land use, water resources, and public policy.</p>
+        <h2>Welcome</h2>
+        <p>I am currently a Postdoctoral Research Associate in the Department of Resource Economics at UMass Amherst. Starting Fall 2025, I will join <a href="https://www.indiana.edu/" target="_blank">Indiana University Bloomington</a> as an Assistant Professor. My work focuses on environmental and natural resource economics with special attention to land use, water resources, and public policy.</p>
       </div>
       <div class="section">
-        <h2>Introduction</h2>
         <p>I hold a Ph.D. in Natural Resource Economics and Environmental Informatics from Virginia Tech, USA, along with degrees in Development Economics from Brazil and Mechanical Engineering from India. My research examines the interactions between human and environmental systems—focusing on the economic and health impacts of land and water policies—and I develop Integrated Assessment Models (IAMs) to address water quality challenges, particularly nutrient pollution.</p>
       </div>
     </div>
