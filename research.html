@@ -12,14 +12,14 @@
       color: #333; 
     }
     header { 
-      background: rgba(153, 0, 0, 0.1); /* Reduced IU Crimson to 10% opacity */
-      color: #333; 
+      background: rgba(153, 0, 0, 0.1);
       padding: 15px 30px; 
       display: flex; 
       align-items: center;
       justify-content: space-between;
     }
-    .header-left img, .header-right img { 
+    .header-left img,
+    .header-right img { 
       height: 40px; 
     }
     nav { 
@@ -34,14 +34,15 @@
     }
     .container { 
       max-width: 1200px;
-      margin: auto;
-      padding: 40px;
+      margin: 40px auto;
+      padding: 0 40px;
     }
     .section {
       margin-bottom: 30px;
     }
     .section h1, .section h2 {
       color: #990000;
+      margin-bottom: 15px;
     }
     .section h3 {
       color: #990000;
@@ -67,8 +68,8 @@
     .paper-item a {
       color: #990000;
       text-decoration: none;
-      font-size: 1.1em;
       font-weight: bold;
+      font-size: 1.1em;
     }
     .paper-item a:hover {
       text-decoration: underline;
@@ -99,9 +100,8 @@
       </a>
     </div>
   </header>
-  
   <div class="container">
-    <!-- Published Papers Section -->
+    <!-- Published Papers -->
     <div class="section" id="published-papers">
       <h1>Published Papers</h1>
       <ul>
@@ -110,34 +110,36 @@
           <small>Accepted for Environment and Development Economics (2025) with Zhenyu Yao.</small>
         </li>
         <li class="paper-item">
-          <a href="https://doi.org/10.1016/j.forpol.2023.103141" target="_blank">"The Human Well-Being Potential of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data"</a>
-          <small>with Edouard Mensah, Ange Kakpo, and Ida Djenontin in <em>Forest Policy and Economics</em>, Volume 160 (2024): 103141.</small>
+          <a href="https://doi.org/10.1016/j.forpol.2023.103141" target="_blank">"The Human Well-Being Potential of Tree Plantations in Sub-Saharan Africa: A Reassessment Using Longitudinal Data"</a>
+          <small>With Edouard Mensah, Ange Kakpo, and Ida Djenontin in <em>Forest Policy and Economics</em>, Volume 160 (2024): 103141.</small>
         </li>
         <li class="paper-item">
           <a href="https://doi.org/10.1073/pnas.2221346120" target="_blank">"Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon"</a>
-          <small>with Kathryn Baragwanath and Ella Bayi in <em>Proceedings of the National Academy of Sciences</em>, 120, No. 22 (2023): e2221346120.</small>
+          <small>With Kathryn Baragwanath and Ella Bayi in <em>Proceedings of the National Academy of Sciences</em>, 120(22) (2023): e2221346120.</small>
         </li>
         <li class="paper-item">
-          <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003253884-10/incentives-rural-households-establish-tree-cover-agricultural-land-andhra-pradesh-india-stella-schons-gregory-amacher-kelly-cobourn-nilesh-shinde-haripriya-gundimeda" target="_blank">"Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh"</a>
-          <small>with Stella Schons, Greg Amacher, Kelly Cobourn and Haripirya Gundimeda in <em>Environmental Economics in Developing Countries: Issues and Challenges</em> (2022): 154.</small>
+          <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003253884-10/incentives-rural-households-establish-tree-cover-agricultural-land-andhra-pradesh-india-stella-schons-gregory-amacher-kelly-cobourn-nilesh-shinde-haripriya-gundimeda" target="_blank">
+            "Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh"
+          </a>
+          <small>With Stella Schons, Greg Amacher, Kelly Cobourn, and Haripriya Gundimeda in <em>Environmental Economics in Developing Countries: Issues and Challenges</em> (2022): 154.</small>
         </li>
       </ul>
     </div>
     
-    <!-- Working Papers & Work in Progress Section -->
+    <!-- Working Papers & Work in Progress -->
     <div class="section" id="working-papers">
-      <h2>Working Papers &amp; Work in Progress (Draft Available Upon Request)</h2>
+      <h2>Working Papers &amp; Work in Progress<br><small>(Draft Available Upon Request)</small></h2>
       
       <!-- Land Category -->
       <h3><span class="marker">🌳</span>Land</h3>
       <ul>
         <li class="paper-item">
           <a href="#">"Beyond the Canopy: Sources of Satellite Data and Deforestation Policy Evaluation in Brazil"</a>
-          <small><em>Journal of Environmental Economics and Management</em> (Invited for Special Issue) with Kathryn Baragwanath.</small>
+          <small><em>Journal of Environmental Economics and Management</em> (Invited, Special Issue) with Kathryn Baragwanath.</small>
         </li>
         <li class="paper-item">
           <a href="#">“Self-Declared and Mandatory Environmental Registration of Landholdings Reduce Land Conflicts in the Brazilian Amazon”</a>
-          <small>with Stella Schons, Alexandre Gori Maia, and Gregory Amacher.</small>
+          <small>With Stella Schons, Alexandre Gori Maia, and Gregory Amacher.</small>
         </li>
         <li class="paper-item">
           <a href="#">“Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil”</a>
@@ -150,7 +152,7 @@
       <ul>
         <li class="paper-item">
           <a href="#">“Unintended Consequences of a Large Irrigation Project for Groundwater Recharge”</a>
-          <small>with Prashikdivya Gajbhiye and Matt Woerman.</small>
+          <small>With Prashikdivya Gajbhiye and Matt Woerman.</small>
         </li>
         <li class="paper-item">
           <a href="#">“Adaptation to Climate Change: Evidence from Agricultural Productivity and Crop Water Footprints”</a>
@@ -162,7 +164,7 @@
         </li>
         <li class="paper-item">
           <a href="#">“The Social Costs of Water Pollution in the United States”</a>
-          <small>with Tihitina Andarge, Mohammad Mainul Hoque, Yongjie Ji, David Keiser, Catherine Kling, Daniel Phaneuf, and Yau-Huo Shr.</small>
+          <small>With Tihitina Andarge, Mohammad Mainul Hoque, Yongjie Ji, David Keiser, Catherine Kling, Daniel Phaneuf, and Yau-Huo Shr.</small>
         </li>
       </ul>
       
@@ -171,7 +173,7 @@
       <ul>
         <li class="paper-item">
           <a href="#">“Effect of Sunshine Duration on Mental Health”</a>
-          <small>with Jayash Paudel.</small>
+          <small>With Jayash Paudel.</small>
         </li>
       </ul>
     </div>
