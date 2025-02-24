@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilesh SN Shinde - Workshop</title>
-  <!-- Google Font for a modern, soothing look -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     /* Global Styles */
@@ -16,7 +16,7 @@
       line-height: 1.6;
     }
     header {
-      background: #f8f8f8; /* Restored light background for better readability */
+      background: #f8f8f8;
       padding: 20px;
       border-bottom: 1px solid #ddd;
       text-align: center;
@@ -24,7 +24,7 @@
     header h1 {
       margin: 0;
       font-size: 1.8em;
-      color: #990000; /* IU Crimson */
+      color: #990000;
     }
     nav {
       margin-top: 10px;
@@ -44,10 +44,10 @@
       padding: 0 20px;
     }
     h2 {
-      color: black; /* Ensuring subheadings are black */
+      color: #990000;
       margin-top: 40px;
       padding-bottom: 5px;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid #990000;
     }
     p {
       margin-bottom: 20px;
@@ -68,6 +68,18 @@
       border-top: 1px solid #ddd;
       margin-top: 40px;
     }
+    /* Responsive adjustments for mobile */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -80,6 +92,7 @@
       <a href="resources.html">Resources</a>
     </nav>
   </header>
+  
   <div class="container">
     <h2>About the Workshop</h2>
     <p>
@@ -107,6 +120,7 @@
       </a>.
     </p>
   </div>
+  
   <footer>
     &copy; 2025 Nilesh SN Shinde. All rights reserved.
   </footer>
