@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilesh SN Shinde - Research</title>
   <!-- Google Font for a modern, soothing look -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for stock icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* Global Styles */
     body {
@@ -84,6 +88,7 @@
     .marker {
       font-size: 1.2em;
       margin-right: 8px;
+      color: #990000;
     }
     footer {
       text-align: center;
@@ -92,6 +97,18 @@
       color: #777;
       border-top: 1px solid #ddd;
       margin-top: 40px;
+    }
+    /* Responsive adjustments for mobile */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
@@ -177,7 +194,7 @@
       <h2>Working Papers</h2>
       
       <!-- Land Category -->
-      <h3><span class="marker">🌳</span>Land</h3>
+      <h3><i class="fas fa-tree marker"></i>Land</h3>
       
       <!-- Paper 1 -->
       <div class="paper">
@@ -219,7 +236,7 @@
       </div>
       
       <!-- Water Category -->
-      <h3><span class="marker">💧</span>Water</h3>
+      <h3><i class="fas fa-tint marker"></i>Water</h3>
       
       <!-- Paper 1 -->
       <div class="paper">
@@ -274,7 +291,7 @@
       </div>
       
       <!-- Health Category -->
-      <h3><span class="marker">🩺</span>Health</h3>
+      <h3><i class="fas fa-heartbeat marker"></i>Health</h3>
       
       <!-- Paper 1 -->
       <div class="paper">
