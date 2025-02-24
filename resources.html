@@ -36,7 +36,7 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #990000;
       font-weight: bold;
     }
     nav a:hover {
@@ -72,6 +72,7 @@
       left: 0;
       color: #990000;
     }
+    /* Global link styling for header/navigation */
     a {
       color: #990000;
       text-decoration: none;
@@ -80,13 +81,12 @@
     a:hover {
       text-decoration: underline;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      padding: 20px;
-      color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
+    /* Override links inside the main container to be black */
+    .container a {
+      color: #000;
+    }
+    .container a:hover {
+      text-decoration: underline;
     }
     /* Responsive adjustments for mobile */
     @media (max-width: 600px) {
