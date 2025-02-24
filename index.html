@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilesh SN Shinde - Home</title>
   <!-- Google Font for a soothing look -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for stock icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* Global Styles */
     body {
@@ -69,6 +73,7 @@
     .content h2 {
       color: #990000;
       margin-bottom: 20px;
+      font-size: 2em; /* Default size for larger screens */
     }
     .content p,
     .content ul {
@@ -85,14 +90,13 @@
       display: inline-block;
       margin: 0 15px;
       text-decoration: none;
+      color: #990000;
     }
-    .social img {
-      width: 40px; /* Adjust size as needed for better proportion */
-      height: auto;
-      vertical-align: middle;
+    .social a:hover {
+      opacity: 0.8;
     }
-    .social a:hover img {
-      opacity: 0.8; /* Slight hover effect */
+    .social i {
+      font-size: 2rem;
     }
     footer {
       text-align: center;
@@ -101,6 +105,18 @@
       color: #777;
       border-top: 1px solid #ddd;
       margin-top: 40px;
+    }
+    /* Responsive adjustments for mobile */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .content h2 {
+        font-size: 1.5em;
+      }
+      nav a {
+        margin: 0 10px;
+      }
     }
   </style>
 </head>
@@ -146,13 +162,13 @@
     </div>
     <div class="social">
       <a href="https://github.com/enre-nilesh" target="_blank" title="GitHub">
-        <img src="github.png" alt="GitHub Logo">
+        <i class="fab fa-github"></i>
       </a>
       <a href="https://scholar.google.com/citations?user=ImlcqdsAAAAJ&hl=en" target="_blank" title="Google Scholar">
-        <img src="scholar.png" alt="Google Scholar Logo">
+        <i class="fas fa-graduation-cap"></i>
       </a>
       <a href="mailto:nnshinde@iu.edu" title="Email">
-        <img src="email.png" alt="Email Logo">
+        <i class="fas fa-envelope"></i>
       </a>
     </div>
   </div>
