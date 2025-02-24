@@ -25,3 +25,42 @@ To run this project locally:
 ```bash
 git clone https://github.com/your-github-username/your-research-portfolio.git
 cd your-research-portfolio
+
+### **What People Usually Write for Website Themes on GitHub Pages?**  
+
+If someone is building a **custom website theme** from scratch on GitHub Pages, their **README.md** usually includes:  
+
+✅ **Overview of the Theme** – What it looks like, what it offers  
+✅ **Live Demo** – A link to an example page  
+✅ **Installation Instructions** – How to install and use the theme  
+✅ **Customization Guide** – How to modify colors, layout, and content  
+✅ **Built With** – Technologies used (HTML, CSS, JavaScript, Jekyll, Bootstrap, etc.)  
+✅ **License & Attribution** – If they borrowed elements from other themes  
+
+For example, a **README.md** for a Jekyll-based theme might look like this:
+
+```markdown
+# My Custom GitHub Pages Theme
+
+A lightweight and professional theme for **GitHub Pages**, designed for researchers and academics.  
+
+## 🎨 Features
+- Responsive, mobile-friendly design
+- Easy customization via `_config.yml`
+- Minimalist layout with a focus on readability
+- Supports Markdown, LaTeX, and Jekyll collections
+
+## 🚀 Installation
+To use this theme with **GitHub Pages**, simply fork this repository and modify the content in:
+- `_config.yml` for site settings
+- `index.md` for the homepage
+- `_posts/` for blog updates
+- `_data/` for structured content
+
+## 🛠 Built With
+- Jekyll
+- Bootstrap 5
+- FontAwesome Icons
+
+## 📜 License
+Open-source under the MIT License.
